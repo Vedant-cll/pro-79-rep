@@ -1,0 +1,53 @@
+<html><head>
+    <title>Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzeria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewblock">
+        <div class="img_div">
+            <img id="ep1" class="img-responsive" src="https://th.bing.com/th/id/R.0151c9635eb6cfe75c36de647f872e09?rik=4CxrRLKfr0llWA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-hd-pizza-download-1356.png&ehk=%2frhfA%2fXPrSG%2bRUjWAUogElTjqCcllabq2%2fnotfUDeKA%3d&risl=&pid=ImgRaw&r=0">
+        </div>
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+           <div id="display_menu"></div>
+        </div>
+    </div>  <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?"> <br><br>
+			<button class="btn btn-success" id="Add_Suggestion" onclick="add_top()">Add Suggestion</button><br><!--Add the code for button here-->
+           <br><!-- <button class="btn btn-success" onclick="add_top()">Add Suggestion</button> -->
+           
+           <button id="add_toppings" onclick="add_item()">Show Pizza</button>
+        </div>
+		
+        <div class="block2">
+            <div id="display_addedmenu">
+            </div>
+        </div>
+        
+    </div>
+
+    <div>
+        <center>
+               <img class="img-responsive" src="https://th.bing.com/th/id/R.064bede10e7a4708ed4911d5d06fe025?rik=zuCjC3fGv350Fg&riu=http%3a%2f%2fcontent.mycutegraphics.com%2fgraphics%2ffood%2fpizza-toppings.png&ehk=8zcDdh7JGo46IutqsKc16JDtPFyh3ESikXiHmtPWxnI%3d&risl=&pid=ImgRaw&r=0">
+        </center>
+        
+    </div>
+
+
+</body></html>
